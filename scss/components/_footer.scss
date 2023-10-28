@@ -1,0 +1,17 @@
+
+.link-legales {
+    text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-right: #52658c;
+    color: #52658c;
+
+    &:hover {
+        color: $color-2brand
+    }
+}
+
+
+.texto-footer {
+    font-size: 18px;
+}

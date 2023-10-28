@@ -1,0 +1,40 @@
+.btn-plomo {
+  background-color: $color-1brand;
+  border: 2px solid $color-1brand;
+  color: white;
+  font-weight: 600;
+
+  &:hover {
+    background-color: white;
+    border: 4px solid $color-2brand;
+    color: $color-2brand;
+    font-weight: 600;
+  }
+}
+
+input.btn.btn-secondary.btn-lg.btn-enviar {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: $color-1brand;
+  --bs-btn-border-color: $color-1brand;
+  --bs-btn-hover-color: $color-2brand;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: $color-2brand;
+}
+
+.btn-seleccionar {
+  background-color: $color-1brand;
+  border: 2px solid $color-1brand;
+  border-radius: 10rem;
+  height: 2.5em;
+  width: 9em;
+  color: white;
+  font-weight: 600;
+
+  &:hover {
+    background-color: white;
+    border: 4px solid $color-2brand;
+    color: $color-2brand;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

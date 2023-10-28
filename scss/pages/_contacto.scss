@@ -1,0 +1,37 @@
+div.row.m-2 {
+    border: #52658c;
+    border-radius: 3%;
+    background-color: #f8f9fa
+}
+
+div.col-lg-6.dflex {
+    padding-left: 6px;
+    padding-right: 3px;
+}
+
+
+input.btn.btn-secondary.btn-lg.btn-enviar {
+    background-color: $color-1brand;
+    border: 2px solid $color-1brand;
+    color: white;
+    font-weight: 300;
+
+    &:hover {
+        background-color: white;
+    border: 2px solid $color-2brand;
+    color: $color-2brand;
+    font-weight: 300;
+    }
+}
+
+h2.subtitulo-contacto {
+   text-align: left;
+}
+
+h2.subtitulo-contacto {
+   text-align: left;
+}
+
+.iframe-mapaGoogle {
+    width: 100%
+}

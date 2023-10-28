@@ -1,0 +1,66 @@
+.pasos {
+
+    max-width: 330px;
+
+    &-icon {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3px;
+
+        & i {
+            color: $color-2brand;
+            font-size: 2.5rem;
+            padding: 5px;
+
+        }
+    }
+
+    &-texto {
+        text-align: center;
+        min-height: 95px;
+
+        & h3 {
+            color: $color-1brand
+        }
+    }
+
+}
+
+.caja-clientes-satisfechos {
+    background-image: url(../img/cf-happy-customers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+.titulo-clientes-satisfechos {
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    justify-items: center;
+    background-color: $color-1brand;
+    opacity: .8;
+    max-width: 80%;
+
+
+    & h2 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+
+}
+
+.testimoniales {
+    font-size: 1.1rem;
+    text-align: center;
+
+}

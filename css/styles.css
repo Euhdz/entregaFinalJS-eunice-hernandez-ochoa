@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: white;
+}
+body h1 {
+  color: navy;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+body h2 {
+  color: #52658C;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.25rem;
+}
+body h3 {
+  color: black;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+body h3 .desctitulo {
+  text-align: center;
+}
+body ul {
+  list-style: none;
+}
+body .parrafo-titulopags {
+  color: black;
+  font-size: 1.3rem;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .invertir-orden {
+    flex-direction: column-reverse;
+  }
+}
+header {
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  font-size: large;
+  font-weight: 600;
+  color: #52658C;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.card-servicios {
+  border: medium solid #F58634;
+  border-radius: 5%;
+  box-shadow: 7px 7px 3px 1px rgba(245, 134, 52, 0.7);
+  background-color: rgb(248, 249, 250);
+}
+.card-servicios__title {
+  text-align: center;
+}
+.card-servicios__title :hover {
+  transform: scale(1.2);
+}
+.card-servicios__title a {
+  color: #52658c;
+  text-decoration: none;
+}
+.card-servicios__texto {
+  text-align: center;
+  min-height: 5.5rem;
+}
+.card-servicios__list {
+  text-align: center;
+}
+.card-servicios__list :hover {
+  transform: scale(1.2);
+}
+.card-servicios__imagen {
+  border-radius: 15%;
+  margin-bottom: 1.5rem;
+}
+
+.card-paquetes {
+  border: thin solid #52658C;
+  border-radius: 0%;
+  box-shadow: 7px 7px 3px 1px rgba(82, 101, 140, 0.7);
+  background-color: rgb(248, 249, 250);
+}
+.card-paquetes__title {
+  text-align: center;
+  min-height: 5.5rem;
+}
+.card-paquetes__title :hover {
+  transform: scale(1.2);
+}
+.card-paquetes__descripcion {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.card-paquetes__imagen {
+  border-radius: 0%;
+  padding-inline: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+div.row.card-paquetes__descripcion {
+  height: fit-content;
+}
+
+.link-legales {
+  text-decoration: none;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-right: #52658c;
+  color: #52658c;
+}
+.link-legales:hover {
+  color: #F58634;
+}
+
+.texto-footer {
+  font-size: 18px;
+}
+
+.btn-plomo {
+  background-color: #52658C;
+  border: 2px solid #52658C;
+  color: white;
+  font-weight: 600;
+}
+.btn-plomo:hover {
+  background-color: white;
+  border: 4px solid #F58634;
+  color: #F58634;
+  font-weight: 600;
+}
+
+input.btn.btn-secondary.btn-lg.btn-enviar {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: $color-1brand;
+  --bs-btn-border-color: $color-1brand;
+  --bs-btn-hover-color: $color-2brand;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: $color-2brand;
+}
+
+.btn-seleccionar {
+  background-color: #52658C;
+  border: 2px solid #52658C;
+  border-radius: 10rem;
+  height: 2.5em;
+  width: 9em;
+  color: white;
+  font-weight: 600;
+}
+.btn-seleccionar:hover {
+  background-color: white;
+  border: 4px solid #F58634;
+  color: #F58634;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mostrar-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.oculto {
+  display: none;
+}
+
+.sobrepuesto {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.titulo-brand {
+  font-size: 3rem;
+}
+
+.bus-catering-naranja {
+  font-size: 0.75em;
+  color: #F58634;
+}
+
+.texto-nosotros {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.titulo-nosotros-highlight {
+  text-align: left;
+}
+
+.texto-nosotros-highlight {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.bgimg-servicios--coffeebreak {
+  background-image: url("../img/s-coffeebreak-detalle.jpg");
+}
+
+.bgimg-servicios--desayuno {
+  background-image: url("../img/s-desayuno-detalle.jpg");
+}
+
+.bgimg-servicios--comida {
+  background-image: url("../img/s-comida-detalle.jpg");
+}
+
+.bgimg-servicios--cocktail {
+  background-image: url("../img/s-cocktail-detalle-canape.jpg");
+}
+
+.caja-serviciosdetallados {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+.titulo-serviciosdetallados {
+  color: white;
+  font-size: 1.1rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  justify-items: center;
+  background-color: #52658C;
+  opacity: 0.8;
+}
+.titulo-serviciosdetallados h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-serviciosdetallados {
+  border: thin solid #52658C;
+  border-radius: 0%;
+  box-shadow: 7px 7px 3px 1px rgba(82, 101, 140, 0.7);
+  background-color: rgb(248, 249, 250);
+  opacity: 0.9;
+  padding-top: 1.5rem;
+}
+@media only screen and (max-width: 4000px) {
+  .card-serviciosdetallados {
+    min-height: 38rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card-serviciosdetallados {
+    min-height: 42rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .card-serviciosdetallados {
+    min-height: fit-content;
+  }
+}
+.card-serviciosdetallados__title {
+  text-align: center;
+  min-height: 5.5rem;
+}
+.card-serviciosdetallados__title h3 {
+  color: #52658C;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.card-serviciosdetallados__title p {
+  line-height: 1.2rem;
+}
+.card-serviciosdetallados__descripcion {
+  text-align: start;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+.card-serviciosdetallados__descripcion h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.card-serviciosdetallados__descripcion ul {
+  list-style-type: square;
+  list-style-position: outside;
+  padding-left: 2rem;
+}
+
+.caja-alianzas {
+  background-image: url(../img/p-alianza-jsu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 10rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.titulo-alianzas {
+  color: white;
+  font-size: 1.1rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  justify-items: center;
+  background-color: #52658C;
+  opacity: 0.8;
+  max-width: 80%;
+}
+.titulo-alianzas h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.parrafo-cotizador {
+  font-size: 1.5rem;
+}
+
+.card {
+  max-width: 30%;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+select {
+  display: inline;
+  text-align: center;
+  border: 1px solid lightskyblue;
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+
+.modal-cotizador {
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all 0.5s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.modal-active .modal-cotizador {
+  margin-top: 0;
+}
+
+.modal-cotizador h3 {
+  color: rgb(225, 76, 65);
+  padding-bottom: 5px;
+}
+
+.modal-cotizador #btn-cerrar-cotizador {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: rgb(225, 76, 65) !important;
+  border: none;
+  background-color: white;
+}
+
+.modal-cotizador #btn-cerrar-cotizador:hover {
+  cursor: pointer;
+}
+
+.modal-cotizador #btn-cerrar-cotizador:focus {
+  outline: none;
+}
+
+.modal-cotizador .paquete-precio {
+  padding-top: 10px;
+}
+
+.card .card-image .card-title {
+  color: rgb(225, 76, 65);
+  position: unset;
+}
+
+.paqueteEnCotizador {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paqueteEnCotizador:hover {
+  border-left: 5px solid rgb(225, 76, 65);
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: #ff6961;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+
+.boton-eliminar:focus {
+  outline: none;
+}
+
+.pasos {
+  max-width: 330px;
+}
+.pasos-icon {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+}
+.pasos-icon i {
+  color: #F58634;
+  font-size: 2.5rem;
+  padding: 5px;
+}
+.pasos-texto {
+  text-align: center;
+  min-height: 95px;
+}
+.pasos-texto h3 {
+  color: #52658C;
+}
+
+.caja-clientes-satisfechos {
+  background-image: url(../img/cf-happy-customers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 10rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.titulo-clientes-satisfechos {
+  color: white;
+  font-size: 1.1rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  justify-items: center;
+  background-color: #52658C;
+  opacity: 0.8;
+  max-width: 80%;
+}
+.titulo-clientes-satisfechos h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.testimoniales {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+div.row.m-2 {
+  border: #52658c;
+  border-radius: 3%;
+  background-color: #f8f9fa;
+}
+
+div.col-lg-6.dflex {
+  padding-left: 6px;
+  padding-right: 3px;
+}
+
+input.btn.btn-secondary.btn-lg.btn-enviar {
+  background-color: #52658C;
+  border: 2px solid #52658C;
+  color: white;
+  font-weight: 300;
+}
+input.btn.btn-secondary.btn-lg.btn-enviar:hover {
+  background-color: white;
+  border: 2px solid #F58634;
+  color: #F58634;
+  font-weight: 300;
+}
+
+h2.subtitulo-contacto {
+  text-align: left;
+}
+
+h2.subtitulo-contacto {
+  text-align: left;
+}
+
+.iframe-mapaGoogle {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

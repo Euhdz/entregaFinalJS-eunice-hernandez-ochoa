@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Catering que se adapta a diferentes tipos de eventos empresariales y presupuestos en Ciudad de México"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>
+      Workit Out Business Catering | Preparamos alimentos y menús para eventos
+      empresariales
+    </title>
+  </head>
+
+  <body>
+    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+      <div class="container py-2">
+        <!--En la mitad del container pongo logo y en la otra mital barra nav-->
+        <div class="row">
+          <!--Sección logo. Pendiente averiguar como hacer que el logo no se vuelva tan pequeño en la versión sm-->
+          <div class="col-6">
+            <a class="navbar-brand" href="#"
+              ><img
+                src="./img/logo-catering-workitout.jpg"
+                alt="Logo-workit-out-catering"
+                class="w-50"
+            /></a>
+          </div>
+          <!--Sección barra nav-->
+          <div class="col-6 d-flex flex-column justify-content-end">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"
+                    ><span class="pe-2 border-end">Nosotros</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/servicios.html"
+                    ><span class="pe-2 border-end">Servicios</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/paquetes.html"
+                    ><span class="pe-2 border-end">Paquetes</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/como-funcionamos.html"
+                    ><span class="pe-2 border-end">Cómo funcionamos</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html"
+                    ><span class="pe-2 border-end">Contacto</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--Sección Nosotros con Bootstrap, la haré con dos containers, el primero anida a otro container con dos filas (para separar las imágenes) y el segundo para el botón de cotización-->
+      <section class="container pt-5">
+        <!--Primera parte de Sección Nosotros-->
+        <div>
+          <div class="row">
+            <!--Sección de texto-->
+            <div class="col-lg-6 d-flex flex-column justify-content-around">
+              <h1 class="titulo-brand">
+                Workit Out
+                <span class="bus-catering-naranja">Business Catering</span>
+              </h1>
+              <p class="texto-nosotros">
+                Somos una empresa especializada en la preparación de alimentos y
+                menús que se adaptan a diferentes tipos de eventos empresariales
+                y presupuestos.
+              </p>
+            </div>
+            <!--Sección de imagen-->
+            <div class="col-lg-6">
+              <figure>
+                <img
+                  data-aos="flip-up"
+                  class="w-100"
+                  src="./img/main-f1.jpg"
+                  alt="Platillo de filete al vino y cafe"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!--Segunda parte de Sección Nosotros-->
+        <div class="row">
+          <!--Sección de texto-->
+          <div
+            class="col-12 col-lg-6 fs-4 1h-base text-lg-start pe-lg-5 d-flex flex-column justify-content-evenly"
+          >
+            <p class="texto-nosotros">
+              Utilizamos ingredientes frescos de alta calidad para preparar
+              alimentos y menús que deleiten a cada comensal.
+            </p>
+            <p class="texto-nosotros">
+              Nos emociona saber que contribuimos a que sus clientes alcanzan
+              los objetivos que se plantearon para su evento y que cada
+              participante se vaya satisfecho.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!--Sección de video-->
+            <video
+              class="w-100"
+              src="./video/production_id_4474372.mp4"
+              controls
+              muted
+              autoplay
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <!--Sección de botón para solicitar cotización que se incluye en todas las páginas (excepto en la de Contacto)-->
+      <div class="container py-5 ps-4">
+        <div
+          class="col-12 d-flex justify-content-center justify-content-lg-start"
+        >
+          <a
+            class="btn btn-lg btn-plomo"
+            href="./pages/contacto.html"
+            role="button"
+            aria-label="Solicita cotización"
+            >SOLICITA COTIZACION</a
+          >
+        </div>
+      </div>
+
+      <!--Sección highlights con foto y texto-->
+      <section class="container">
+        <!--Fila con foto, highlightsy texto. Foto al principio-->
+        <div class="row pt-3 border-top invertir-orden">
+          <!--Sección de imagen-->
+          <div class="col-lg-3">
+            <figure>
+              <img
+                data-aos="flip-up"
+                class="w-100"
+                src="./img/indx-hlgt1-alimentos-ocasion.jpg"
+                alt="Platillo de sandwich huevo y otros alimentos"
+              />
+            </figure>
+          </div>
+          <!--Sección de texto-->
+          <div class="col-lg-9 d-flex flex-column justify-content-center">
+            <h2 class="titulo-nosotros-highlight">
+              Alimentos y bebidas para cada ocasión
+            </h2>
+            <p class="texto-nosotros-highlight">
+              Hemos creado menús para diferentes ocasiones, desde servicio
+              sencillo de café y bebidas, hasta desayunos, comidas y cenas
+              sustanciosas.
+            </p>
+          </div>
+        </div>
+        <!--Fila con foto, highlightsy texto. Foto al final-->
+        <div class="row pt-3 border-top">
+          <!--Sección de texto-->
+          <div class="col-lg-9 d-flex flex-column justify-content-center">
+            <h2 class="titulo-nosotros-highlight">
+              Diferentes formatos de presentación
+            </h2>
+            <p class="texto-nosotros-highlight">
+              Contamos con diferentes formatos en la presentación de los
+              alimentos, incluyendo barras tipo buffet, servicio a la mesa,
+              picnic, alimentos en cajita (“box-lunch”) o bolsa
+              (“Brown-bag-lunch”) para comer mientras se trabaja, bocadillos y
+              canapés o estaciones de alimentos y/o bebidas.
+            </p>
+          </div>
+          <!--Sección de imagen-->
+          <div class="col-lg-3">
+            <figure>
+              <img
+                data-aos="flip-up"
+                class="w-100"
+                src="./img/indx-hlgt2-formato-buffet-casual.jpg"
+                alt="Buffet casual con carnes frías"
+              />
+            </figure>
+          </div>
+        </div>
+        <!--Fila con foto, highlightsy texto. Foto al principio-->
+        <div class="row pt-3 border-top invertir-orden">
+          <!--Sección de imagen-->
+          <div class="col-lg-3">
+            <figure>
+              <img
+                data-aos="flip-up"
+                class="w-100"
+                src="./img/indx-hlgt3-alianzas-mesa-evento.jpg"
+                alt="Mesa con cubiertos adornada para evento"
+              />
+            </figure>
+          </div>
+          <!--Sección de texto-->
+          <div class="col-lg-9 d-flex flex-column justify-content-center">
+            <h2 class="titulo-nosotros-highlight">
+              Tenemos alianzas con lugares de eventos
+            </h2>
+            <p class="texto-nosotros-highlight">
+              Somos socios estratégicos de Jardín Santa Ursula / Workit-out, con
+              quienes tenemos atractivos paquetes que incluyen las
+              instalaciones, mobiliario, equipo de audio y video y otros
+              servicios para tu evento.
+            </p>
+          </div>
+        </div>
+        <!--Fila con foto, highlights y texto. Foto al final. Por ser el último incluye borde abajo-->
+        <div class="row pt-3 border-top border-bottom">
+          <!--Sección de texto-->
+          <div class="col-lg-9 d-flex flex-column justify-content-center">
+            <h2 class="titulo-nosotros-highlight">
+              Equipo altamente capacitado
+            </h2>
+            <p class="texto-nosotros-highlight">
+              Nuestro personal está altamente capacitado y comprometido con dar
+              a nuestros clientes un servicio profesional y de calidad y prueba
+              de esto son los testimoniales de cientos de clientes satisfechos.
+            </p>
+          </div>
+          <!--Sección de imagen-->
+          <div class="col-lg-3">
+            <figure>
+              <img
+                data-aos="flip-up"
+                class="w-100"
+                src="./img/indx-hlgt4-personal-catering.jpg"
+                alt="Personal preparando bocadillos"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!--Sección de botón para solicitar cotización que se incluye en todas las páginas (excepto en la de Contacto)-->
+      <div class="container py-5 ps-4">
+        <div
+          class="col-12 d-flex justify-content-center justify-content-lg-start"
+        >
+          <a
+            class="btn btn-lg btn-plomo"
+            href="./pages/contacto.html"
+            role="button"
+            aria-label="Solicita cotización"
+            >SOLICITA COTIZACION</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!--Sección Footer (2 containers con 2 filas c/u para acomodar los diferentes elementos)-->
+    <footer
+      class="container-fluid bg-body-tertiary border-top border-bottom py-3"
+    >
+      <!--Sección de redes sociales del footer-->
+      <div class="container py-4px">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <h4 class="texto-footer">Síguenos en</h4>
+            </div>
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <ul class="fs-3 d-flex">
+                  <!--Pendiente checar cómo agregar la liga a la pag de la red social respectiva y ligarlas (cuando existan, jeje) -->
+                  <li class="bi bi-facebook px-4"></li>
+                  <li class="bi bi-instagram px-4"></li>
+                  <li class="bi bi-youtube px-4"></li>
+                  <li class="bi bi-linkedin px-4"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sección de legales del footer. Queda pendiente texto Aviso de privacidad y ligarlo-->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 text-center text-lg-start">
+              <a href="#" class="link-legales">Aviso de Privacidad</a>
+            </div>
+            <div class="col-12 col-lg-8 text-center text-lg-start">
+              Workit-Out Business Catering © Todos los derechos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

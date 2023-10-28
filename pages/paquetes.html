@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tenemos paquetes de catering empresarial que incluyen los alimentos y bebidas desde desayuno, coffee break, comidas y paquetes con mobiliario en el Jardín Santa Ursula"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Workit Out Business Catering | Paquetes</title>
+  </head>
+
+  <body>
+    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+      <div class="container py-2">
+        <!--En la mitad del container pongo logo y en la otra mital barra nav-->
+        <div class="row">
+          <!--Sección logo. Pendiente averiguar como hacer que el logo no se vuelva tan pequeño en la versión sm-->
+          <div class="col-6">
+            <a class="navbar-brand" href="../index.html"
+              ><img
+                src="../img/logo-catering-workitout.jpg"
+                alt="Logo-workit-out-catering"
+                class="w-50"
+            /></a>
+          </div>
+          <!--Sección barra nav-->
+          <div class="col-6 d-flex flex-column justify-content-end">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html"
+                    ><span class="pe-2 border-end">Nosotros</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./servicios.html"
+                    ><span class="pe-2 border-end">Servicios</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"
+                    ><span class="pe-2 border-end">Paquetes</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./como-funcionamos.html"
+                    ><span class="pe-2 border-end">Cómo funcionamos</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html"
+                    ><span class="pe-2 border-end">Contacto</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección título y subtítulo de página -->
+      <section class="container py-4 text-center">
+        <h1 class="titulopags">Paquetes</h1>
+        <p class="parrafo-titulopags">
+          Tenemos paquetes que incluyen el lugar y mobiliario para tu evento,
+          además de alimentos y bebidas.
+        </p>
+      </section>
+
+      <!--Sección de Paquetes con precios especiales que incluirá un cotizador (que estoy trabajando en el curso de JavaScript) que solicitaría al usuario/potencial cliente que ingrese el número de personas (entre 10 y 200), la selección del paquete y en su caso servicios adicionales.  -->
+      <section class="container caja-alianzas my-2">
+        <div class="container titulo-alianzas">
+          <h2>Paquetes Especiales en Jardín Santa Ursula</h2>
+          <p>
+            Haz de tu reunión o evento de trabajo una experiencia inolvidable en
+            el oasis urbano Jardín Santa Ursula. Nosotros nos encargaremos de
+            agasajar a cada participante con alimentos y bebidas de primera
+            calidad y adecuados para tu evento para que ustedes se ocupen de
+            cumplir con los objetivos que se plantearon.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección Cotizador / Pendiente mejorar diseño visual -->
+      <section class="container py-4 text-center">
+        <h2 class="titulopags">Cotizador</h2>
+        <p class="parrafo-titulopags">
+          Cotiza aquí nuestros paquetes especiales o envíanos una solicitud
+          contándonos de tu evento para armarte un paquete adecuado a sus
+          necesidades.
+        </p>
+      </section>
+
+      <div class="container my-3 p-4 border card-paquetes">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="parrafo-cotizador">
+              Ingresa el número de personas que asistirán a tu evento
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <input
+              type="number"
+              class="form-control ingresa-num"
+              placeholder=""
+              value=""
+              max="200"
+              min="10"
+            />
+            <label>Mínimo 10 personas, máximo 200</label>
+          </div>
+          <div class="col-lg-3">
+            <button class="btn btn-primary enviar" type="submit">
+              Ingresar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-3 p-4 border card-paquetes">
+        <div class="row">
+          <div class="col-lg-10">
+            <p class="parrafo-cotizador">
+              Selecciona alguno de los paquetes que tenemos a continuación:
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Aquí creo las tarjetas de los Paquetes-->
+
+      <section class="container">
+        <div class="row" id="paquete-contenedor"></div>
+      </section>
+
+      <!-- Sección de botón para solicitar cotización que se incluye en todas las
+      páginas (excepto en la de Contacto) -->
+
+      <div class="container py-5 ps-4">
+        <div
+          class="col-12 d-flex justify-content-center justify-content-lg-start"
+        >
+          <a
+            class="btn btn-lg btn-plomo"
+            href="./contacto.html"
+            role="button"
+            aria-label="Solicita cotización"
+            >SOLICITA COTIZACION</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!--Sección Footer (2 containers con 2 filas c/u para acomodar los diferentes elementos)-->
+    <footer
+      class="container-fluid bg-body-tertiary border-top border-bottom py-3"
+    >
+      <!--Sección de redes sociales del footer-->
+      <div class="container py-4px">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <h4 class="texto-footer">Síguenos en</h4>
+            </div>
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <ul class="fs-3 d-flex">
+                  <!--Pendiente checar cómo agregar la liga a la pag de la red social respectiva y ligarlas (cuando existan, jeje) -->
+                  <li class="bi bi-facebook px-4"></li>
+                  <li class="bi bi-instagram px-4"></li>
+                  <li class="bi bi-youtube px-4"></li>
+                  <li class="bi bi-linkedin px-4"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sección de legales del footer. Queda pendiente texto Aviso de privacidad y ligarlo-->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 text-center text-lg-start">
+              <a href="#" class="link-legales">Aviso de Privacidad</a>
+            </div>
+            <div class="col-12 col-lg-8 text-center text-lg-start">
+              Workit-Out Business Catering © Todos los derechos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../data/stock.js"></script>
+    <script src="../js/cotizador.js"></script>
+    <script src="../js/paquetes.js"></script>
+    <script
+      src="https://kit.fontawesome.com/df59baf6b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

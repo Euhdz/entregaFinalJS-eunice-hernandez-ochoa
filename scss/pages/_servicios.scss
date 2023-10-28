@@ -1,0 +1,108 @@
+$imagenesbgserv: (
+    coffeebreak: "../img/s-coffeebreak-detalle.jpg",
+    desayuno: "../img/s-desayuno-detalle.jpg",
+    comida: "../img/s-comida-detalle.jpg",
+    cocktail: "../img/s-cocktail-detalle-canape.jpg",
+);
+
+@each $servicio,
+$imgurl in $imagenesbgserv {
+    .bgimg-servicios--#{$servicio} {
+        background-image: url($imgurl);
+    }
+}
+
+
+
+
+.caja-serviciosdetallados {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1%;
+    padding-bottom: 3%;
+
+}
+
+
+
+.titulo-serviciosdetallados {
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    justify-items: center;
+    background-color: $color-1brand;
+    opacity: .8;
+
+
+
+    & h2 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+}
+
+
+
+.card-serviciosdetallados {
+
+    border: thin solid $color-1brand;
+    border-radius: 0%;
+    box-shadow: 7px 7px 3px 1px rgba($color-1brand, $alpha: 0.7);
+    background-color: $color-bg2;
+    opacity: .9;
+    padding-top: 1.5rem;
+
+    @media only screen and (max-width: 4000px) {
+        min-height: 38rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        min-height: 42rem;
+    }
+
+    @media only screen and (max-width: 992px) {
+        min-height: fit-content;
+    }
+
+
+    &__title {
+        text-align: center;
+        min-height: 5.5rem;
+
+
+
+        & h3 {
+            color: $color-1brand;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        & p {
+            line-height: 1.2rem;
+        }
+
+    }
+
+    &__descripcion {
+        text-align: start;
+        font-size: 1.2rem;
+        padding-left: 1rem;
+
+        & h4 {
+            font-size: 1.1rem;
+            font-weight: bold;
+
+        }
+
+        & ul {
+            list-style-type: square;
+            list-style-position: outside;
+            padding-left: 2rem;
+        }
+    }
+
+}

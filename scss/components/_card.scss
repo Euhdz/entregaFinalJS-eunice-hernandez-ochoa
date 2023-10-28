@@ -1,0 +1,77 @@
+.card-servicios {
+  border: medium solid $color-2brand;
+  border-radius: 5%;
+  box-shadow: 7px 7px 3px 1px rgba($color-2brand, $alpha: 0.7);
+  background-color: $color-bg2;
+
+  &__title {
+    text-align: center;
+
+    :hover {
+      transform: scale(1.2);
+    }
+    a {
+      color: rgba($color-1brand, $alpha: 1);
+      text-decoration: none;
+    }
+  }
+
+  &__texto {
+    text-align: center;
+    min-height: 5.5rem;
+  }
+
+  &__list {
+    text-align: center;
+
+    :hover {
+      transform: scale(1.2);
+    }
+  }
+
+  // &__item {
+  //}
+
+  &__imagen {
+    border-radius: 15%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.card-paquetes {
+  border: thin solid $color-1brand;
+  border-radius: 0%;
+  box-shadow: 7px 7px 3px 1px rgba($color-1brand, $alpha: 0.7);
+  background-color: $color-bg2;
+
+  &__title {
+    text-align: center;
+    min-height: 5.5rem;
+
+    :hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__descripcion {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  &__imagen {
+    border-radius: 0%;
+    padding-inline: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+div.row.card-paquetes__descripcion {
+  height: fit-content;
+}
+
+// OJO: aquí no está haciendo nada esto que sigue. Debo averiguar cómo hacerlo.
+// div.row.card-paquetes__descripcion__lista {
+//  ul {
+//   text-align: left;
+// }
+//}

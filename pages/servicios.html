@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nuestros servicios de catering empresarial incluye servicios de coffee break, desayunos, comidas, cocktail y estaciones de alimentos y bebidas"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Workit Out Business Catering | Servicios</title>
+  </head>
+
+  <body>
+    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+      <div class="container py-2">
+        <!--En la mitad del container pongo logo y en la otra mital barra nav-->
+        <div class="row">
+          <!--Sección logo. Pendiente averiguar como hacer que el logo no se vuelva tan pequeño en la versión sm-->
+          <div class="col-6">
+            <a class="navbar-brand" href="../index.html"
+              ><img
+                src="../img/logo-catering-workitout.jpg"
+                alt="Logo-workit-out-catering"
+                class="w-50"
+            /></a>
+          </div>
+          <!--Sección barra nav-->
+          <div class="col-6 d-flex flex-column justify-content-end">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html"
+                    ><span class="pe-2 border-end">Nosotros</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"
+                    ><span class="pe-2 border-end">Servicios</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./paquetes.html"
+                    ><span class="pe-2 border-end">Paquetes</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./como-funcionamos.html"
+                    ><span class="pe-2 border-end">Cómo funcionamos</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html"
+                    ><span class="pe-2 border-end">Contacto</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección de título y subtítulo de la página -->
+      <section class="container py-4 text-center">
+        <h1 class="titulopags">Servicios</h1>
+        <p class="parrafo-titulopags">
+          Prestamos nuestros servicios entre 7am y 8pm en la Ciudad de México
+        </p>
+      </section>
+
+      <!-- Sección de contenido de página "Servicios" -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xl-3 my-3">
+            <div class="container d-flex flex-column card-servicios">
+              <div class="row card-servicios__title pt-3">
+                <h2><a href="#coffeebreak-id">Coffee Break</a></h2>
+              </div>
+              <div class="row card-servicios__texto">
+                <ul class="card-servicios__list">
+                  <li class="card__item">Solo bebidas</li>
+                  <li class="card__item">Bebidas y bocadillos</li>
+                </ul>
+              </div>
+              <div class="row">
+                <img
+                  data-aos="flip-down"
+                  class="card-servicios__imagen"
+                  src="../img/coffee-f3.jpg"
+                  alt="Cafeteras"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3 my-3">
+            <div class="container d-flex flex-column card-servicios">
+              <div class="row card-servicios__title pt-3">
+                <h2><a href="#desayuno-id">Desayuno</a></h2>
+              </div>
+              <div class="row card-servicios__texto">
+                <ul class="card-servicios__list">
+                  <li class="card__item">Emplatado</li>
+                  <li class="card__item">Buffet</li>
+                  <li class="card__item">Caja desayuno</li>
+                </ul>
+              </div>
+              <div class="row">
+                <img
+                  data-aos="flip-down"
+                  data-aos-delay="100"
+                  class="card-servicios__imagen"
+                  src="../img/desayuno-f4.jpg"
+                  alt="Plato con huevos"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3 my-3">
+            <div class="container d-flex flex-column card-servicios">
+              <div class="row card-servicios__title pt-3">
+                <h2><a href="#comida-id">Comida</a></h2>
+              </div>
+              <div class="row card-servicios__texto">
+                <ul class="card-servicios__list">
+                  <li class="card__item">Emplatado</li>
+                  <li class="card__item">Buffet</li>
+                  <li class="card__item">Caja comida</li>
+                </ul>
+              </div>
+              <div class="row">
+                <img
+                  data-aos="flip-down"
+                  data-aos-delay="200"
+                  class="card-servicios__imagen"
+                  src="../img/comida-f5.jpg"
+                  alt="Pollo y verduras"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3 my-3">
+            <div class="container d-flex flex-column card-servicios">
+              <div class="row card-servicios__title pt-3">
+                <h2><a href="#cocktail-id">Cocktail</a></h2>
+              </div>
+              <div class="row card-servicios__texto">
+                <ul class="card-servicios__list">
+                  <li class="card__item">Canapés</li>
+                  <li class="card__item">Estaciones de comida</li>
+                  <li class="card__item">Bar / bebidas</li>
+                </ul>
+              </div>
+              <div class="row">
+                <img
+                  data-aos="flip-down"
+                  data-aos-delay="300"
+                  class="card-servicios__imagen"
+                  src="../img/bocadillos-f6.jpg"
+                  alt="Canapés"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Sección de botón para solicitar cotización que se incluye en todas las páginas (excepto en la de Contacto)-->
+      <div class="container py-5 ps-4">
+        <div
+          class="col-12 d-flex justify-content-center justify-content-lg-start"
+        >
+          <a
+            class="btn btn-lg btn-plomo"
+            href="./contacto.html"
+            role="button"
+            aria-label="Solicita cotización"
+            >SOLICITA COTIZACION</a
+          >
+        </div>
+      </div>
+
+      <!-- Sección de detalle de Servicios en página Servicios-->
+      <section
+        class="container bgimg-servicios--coffeebreak caja-serviciosdetallados my-5"
+      >
+        <div class="container titulo-serviciosdetallados">
+          <h2 id="coffeebreak-id">Coffee Break</h2>
+          <p>
+            Barras de bebidas y bocadillos pequeños para reuniones de trabajo o
+            sus recesos.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center column-gap-3">
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title py-1">
+                  <h3>Solo Bebidas</h3>
+                  <p>Incluyen vasos, tazas y equipo de servicio</p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>SIMPLE</h4>
+                  <p>Café americano, selección de tés y botellitas de agua</p>
+                  <h4>BASICO</h4>
+                  <p>Servicio simple + jugos y/o refrescos</p>
+                  <p>Pregunta por otras bebidas para adicionar.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-1">
+                  <h3>Bebidas y bocadillos</h3>
+                  <p>Incluyen vajilla, cubertería y equipo de servicio</p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>BASICO PLUS</h4>
+                  <p>Bebidas Básico + fruta y galletas o panes mini surtidos</p>
+                  <h4>AMERICANO</h4>
+                  <p>Básico Plus + mini sándwiches</p>
+                  <h4>EUROPEO</h4>
+                  <p>Básico Plus + quesos y carnes frías.</p>
+                  <p>Pregunta por otras bebidas para adicionar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container bgimg-servicios--desayuno caja-serviciosdetallados my-5"
+      >
+        <div class="container titulo-serviciosdetallados">
+          <h2 id="desayuno-id">Desayuno</h2>
+          <p>
+            Maximiza la productividad de tu evento empezando el día con un
+            desayuno delicioso y nutritivo. Tenemos diferentes opciones para
+            adaptarnos a tus requerimientos.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-3">
+                  <h3>Emplatado</h3>
+                  <p>
+                    Incluyen canasta de pan dulce mini en la mesa, jugo o fruta
+                    y café americano.
+                  </p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>EJECUTIVO</h4>
+                  <p>
+                    Huevos revueltos o Frittata y papitas rostizadas con
+                    pimentón
+                  </p>
+                  <h4>MEXICANO</h4>
+                  <p>Chilaquiles verdes o rojos y frijoles refritos</p>
+                  <h4>LIGERO</h4>
+                  <p>
+                    Suprema de frutas de la estación con queso cottage o toast
+                    integral con vegetales
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-3">
+                  <h3>Buffet</h3>
+                  <p>Incluyen pan, café americano, variedad de tés</p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>CONTINENTAL</h4>
+                  <p>
+                    Quesos y carnes frías, jugo de naranja, fruta de estación,
+                    yogurt, miel y granola, pan dulce y pan de caja,
+                    mantequilla, mermeladas.
+                  </p>
+                  <h4>EJECUTIVO</h4>
+                  <p>
+                    Buffet Continental + huevos revueltos, tocino y papitas
+                    rostizadas.
+                  </p>
+                  <h4>MEXICANO</h4>
+                  <p>
+                    Buffet Continental + huevos revueltos, chilaquiles verdes o
+                    rojos, tamales y frijoles refritos
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-3">
+                  <h3>Caja Desayuno</h3>
+                  <p>
+                    Desayuno individual en cajita o bolsa. Por su practicidad es
+                    ideal para llevarlo y comerlo en diferentes entornos.
+                  </p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>BOX DESAYUNO</h4>
+                  <p>Muffin o pan dulce, fruta, yogurt y jugo de bote o café</p>
+                  <h4>BOX DESAYUNO PLUS</h4>
+                  <p>Fruta, pan dulce mini, jugo de bote o café y a elegir:</p>
+                  <ul>
+                    <li>Croissant de jamón y queso</li>
+                    <li>Bagel con queso crema</li>
+                    <li>Sándwich de huevo con tocino</li>
+                    <li>Chilaquiles y frijoles refritos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container bgimg-servicios--comida caja-serviciosdetallados my-5"
+      >
+        <div class="container titulo-serviciosdetallados">
+          <h2 id="comida-id">Comida</h2>
+          <p>
+            Tenemos diferentes opciones dependiendo de tus deseos, el entorno de
+            tu evento y tu presupuesto.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-3">
+                  <h3>Emplatado</h3>
+                  <p>
+                    Incluyen refresco o agua fresca, pan en la mesa, salsas y
+                    café americano.
+                  </p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>EJECUTIVO</h4>
+                  <p>Menú de 3 tiempos: sopa, plato fuerte y postre.</p>
+                  <h4>EJECUTIVO PLUS</h4>
+                  <p>
+                    Menú de 4 tiempos: entrada, sopa, plato fuerte y postre.
+                  </p>
+                  <h4>GOURMET</h4>
+                  <p>
+                    En 3 o 4 tiempos a elegir y preparado con ingredientes
+                    premium.
+                  </p>
+                  <p>
+                    Tenemos opciones sustanciosas o ligeras, con carne de res,
+                    pollo, pescado y vegetarianas a elegir
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-3">
+                  <h3>Buffet</h3>
+                  <p>
+                    Incluyen refresco o agua fresca, pan, salsas y café
+                    americano.
+                  </p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>BUFFET EJECUTIVO</h4>
+                  <p>Selecciona la variedad de platillos para tu buffet:</p>
+                  <ul>
+                    <li>2 Ensaladas o una sopa y una ensalada</li>
+                    <li>2 Platos fuertes</li>
+                    <li>3 Guarniciones</li>
+                    <li>2 postres</li>
+                  </ul>
+                  <p>También tenemos opciones más casuales:</p>
+                  <p>
+                    Buffet de pastas y ensaladas, taquizas, sándwiches y sopas y
+                    otros.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-3">
+                  <h3>Caja Comida</h3>
+                  <p>
+                    En cajita o bolsa individual. Por su practicidad es ideal
+                    para llevarlo y comerlo en diferentes entornos.
+                  </p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>BOX COMIDA</h4>
+                  <p>Sándwich/chapata, fruta y botellita de agua o refresco</p>
+                  <h4>BOX COMIDA PLUS</h4>
+                  <p>Incluye fuerte, guarnición, postre y bebida a elegir:</p>
+                  <ul>
+                    <li>Sándwich/chapata, pasta o ensalada con proteína</li>
+                    <li>
+                      Chips, nueces o ensalada de vegetales o fruta pequeña
+                    </li>
+                    <li>Galleta, barra de granola o fruta</li>
+                    <li>Agua natural o de sabor o refresco</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container bgimg-servicios--cocktail caja-serviciosdetallados my-5"
+      >
+        <div class="container titulo-serviciosdetallados">
+          <h2 id="cocktail-id">Cocktail</h2>
+          <p>
+            El catering tipo cocktail es ideal para eventos de networking, o
+            relajados en el que los invitados se pueden mover con libertad. La
+            comida consta de bocadillos fríos y/o calientes, fáciles de consumir
+            de pie.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-3">
+                  <h3>Canapés</h3>
+                  <p>
+                    Bocadillos fríos y/o calientes, salados y dulces que van
+                    repartiendo meseros.
+                  </p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>SOLO BOCADILLOS</h4>
+                  <p>
+                    Acordamos la cantidad y variedad de bocadillos y se los
+                    entregamos al encargado de tu evento.
+                  </p>
+                  <h4>SERVICIO COMPLETO</h4>
+                  <p>
+                    Acordamos por anticipado las bebidas y bocadillos que se
+                    servirán, el equipo y personal necesario y nosotros no
+                    encargamos del resto.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-3">
+                  <h3>Estaciones de comida</h3>
+                  <p>
+                    Bocadillos fríos y/o calientes, salados y/o dulces
+                    presentados en mesas o barras a los cuales se acercan los
+                    invitados a servirse
+                  </p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>QUESOS Y CARNES FRIAS</h4>
+                  <p>
+                    Variedad de quesos, jamones y carnes frías, uvas, frutos
+                    secos y pan
+                  </p>
+                  <h4>MESAS DE SNACKS</h4>
+                  <p>Chips, cacahuates, crudités, chilitos, dulces y salsas.</p>
+                  <h4>MESAS DE POSTRES Y DULCES</h4>
+                  <p>
+                    Variedad de pasteles, galletas, chocolates y otros postres.
+                  </p>
+                  <p>
+                    Además, barras de ensaladas, pizzas, pastas, tacos,
+                    sándwiches, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 my-3">
+              <div
+                class="container d-flex flex-column card-serviciosdetallados"
+              >
+                <div class="row card-serviciosdetallados__title pt-3">
+                  <h3>Barras de bebidas o bar</h3>
+                  <p>
+                    Bebidas con o sin alcohol, ofrecidas por meseros o
+                    presentados en barras a los cuales se acercan los invitados.
+                  </p>
+                </div>
+                <div class="row card-serviciosdetallados__descripcion">
+                  <h4>SERVICIO DE BEBIDAS Y VINO</h4>
+                  <p>Por cantidad o barra libre por teimpo definido</p>
+                  <h4>BARRAS DE CAFE</h4>
+                  <h4>BARRAS DE COCTELES</h4>
+                  <h4>BARRAS DE AGUAS FRESCAS</h4>
+                  <p>Pregunta por más opciones</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Sección Footer (2 containers con 2 filas c/u para acomodar los diferentes elementos)-->
+    <footer
+      class="container-fluid bg-body-tertiary border-top border-bottom py-3"
+    >
+      <!--Sección de redes sociales del footer-->
+      <div class="container py-4px">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <h4 class="texto-footer">Síguenos en</h4>
+            </div>
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <ul class="fs-3 d-flex">
+                  <!--Pendiente checar cómo agregar la liga a la pag de la red social respectiva y ligarlas (cuando existan, jeje) -->
+                  <li class="bi bi-facebook px-4"></li>
+                  <li class="bi bi-instagram px-4"></li>
+                  <li class="bi bi-youtube px-4"></li>
+                  <li class="bi bi-linkedin px-4"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sección de legales del footer. Queda pendiente texto Aviso de privacidad y ligarlo-->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 text-center text-lg-start">
+              <a href="#" class="link-legales">Aviso de Privacidad</a>
+            </div>
+            <div class="col-12 col-lg-8 text-center text-lg-start">
+              Workit-Out Business Catering © Todos los derechos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
