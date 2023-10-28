@@ -1,9 +1,13 @@
 const pintarPaquetes = (data) => {
   const contenedor = document.getElementById("paquete-contenedor");
-  data.forEach((paquete) => {
-    const div = document.createElement("div");
-    div.classList.add("col-lg-4");
-    div.innerHTML += `
+
+  fetch("../data/stock.json")
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((paquete) => {
+        const div = document.createElement("div");
+        div.classList.add("col-lg-4");
+        div.innerHTML += `
   <div class="container d-flex flex-column card-paquetes">
     <div class="row card-paquetes__title pt-3">
       <h2>${paquete.nombre}</h2>
@@ -28,8 +32,8 @@ const pintarPaquetes = (data) => {
     </div>
   </div>
 `;
-    contenedor.appendChild(div);
-  });
+        contenedor.appendChild(div);
+      });
+    });
 };
-
 document.addEventListener("DOMContentLoaded", pintarPaquetes(paquetes));
