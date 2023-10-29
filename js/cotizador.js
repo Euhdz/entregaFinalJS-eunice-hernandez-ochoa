@@ -39,12 +39,12 @@ const ingresanum = document.querySelector(".ingresa-num");
 enviar.addEventListener("click", function () {
   numIngresado = parseInt(ingresanum.value);
 
-  if (numIngresado <= numBasePersonas) {
-    numIngresado = 10;
-  } else if (numIngresado >= numMaxPersonas) {
-    numIngresado = 200;
-  }
-
+  numIngresado =
+    numIngresado <= numBasePersonas
+      ? 10
+      : numIngresado >= numMaxPersonas
+      ? 200
+      : numIngresado;
   ingresanum.value = numIngresado;
 
   guardarNumIngresadoStorage();
@@ -87,7 +87,7 @@ paqueteContenedor.addEventListener("click", (e) => {
 
     paqueteSeleccionado = paquete;
 
-    // Modal que muestra la cotización y llevaal formulario si el usuario desea continuar para ser contactado
+    // Modal que muestra la cotización y lleva al formulario si el usuario desea continuar para ser contactado
 
     Swal.fire({
       title: "Cotización Preliminar",
@@ -113,8 +113,6 @@ paqueteContenedor.addEventListener("click", (e) => {
     });
   }
 });
-
-//OJO: CHECAR COMO EVITO QUE AL OPRIMIR COTIZACION DE OTRA PAGINA, EN LA SECCION DE COMENTARIOS DEL FORMULARIO NO APAREZCA EL TEXTO DE LA COTIZACION
 
 //Storage local del número ingresado para mantener el valor si se cierra la sesión y el usuario regresa después.
 
